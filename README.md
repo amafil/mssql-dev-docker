@@ -19,7 +19,7 @@ Username: sa
 Password: personalPassword0
 ```
 
-if you want to change password can change `Dockerfile`
+if you want to change default password edit `Dockerfile`
 
 ```
     ...

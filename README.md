@@ -1,16 +1,16 @@
-# mssql-2019-dev-docker
+# mssql-dev-docker
 
-Windows docker image of SQL Server 2019 Developer
+Windows docker image of SQL Server Developer
 
 - Microsoft SQL Server Developer
 
 Build image:
 
-`docker build -t mssql-2019-dev .`
+`docker build -t mssql-dev .`
 
 Start container:
 
-`docker run -p 8080:8080 -d filoa86/mssql-2019-dev:latest`
+`docker run -p 8080:8080 -d filoa86/mssql-dev:latest`
 
 Default SQL Server credentials:
 

@@ -10,7 +10,7 @@ Build image:
 
 Start container:
 
-`docker run -p 8080:8080 -d filoa86/mssql-dev:latest`
+`docker run -p 1433:1433 -d filoa86/mssql-dev:latest -m 2g`
 
 Default SQL Server credentials:
 

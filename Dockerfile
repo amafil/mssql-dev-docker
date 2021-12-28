@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
+ADD "https://go.microsoft.com/fwlink/?linkid=2157201" c:/utils/DacFramework.msi
+
 # Download Links:
 ENV exe "https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e7112d1/SQLServer2019-DEV-x64-ENU.exe"
 ENV box "https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e7112d1/SQLServer2019-DEV-x64-ENU.box"

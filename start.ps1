@@ -23,6 +23,9 @@ if($ACCEPT_EULA -ne "Y" -And $ACCEPT_EULA -ne "y")
     exit 1
 }
 
+# install dacframework
+C:\utils\DacFramework.msi
+
 # start the service
 Write-Verbose "Starting SQL Server"
 start-service MSSQLSERVER

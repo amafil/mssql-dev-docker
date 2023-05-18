@@ -1,4 +1,4 @@
-# Windows docker image of SQL Server for developer purpose
+# Windows docker image of SQL Server for development purpose
 
 _Microsoft SQL Server 2022 Developer Edition_
 

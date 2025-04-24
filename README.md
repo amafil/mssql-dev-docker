@@ -8,7 +8,7 @@ _Microsoft SQL Server 2022 Developer Edition for Windows Containers_
 docker build -t mssql-dev:2022-latest .
 ```
 
-## Run image
+## Run container
 
 ```powershell
 docker run -d `

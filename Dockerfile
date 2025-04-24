@@ -28,6 +28,10 @@ RUN set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql1
 RUN set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql16.MSSQLSERVER\mssqlserver\supersocketnetlib\tcp\ipall' -name tcpport -value 1433
 RUN set-itemproperty -path 'HKLM:\software\microsoft\microsoft sql server\mssql16.MSSQLSERVER\mssqlserver\' -name LoginMode -value 2
 
+# Install SQLCMD and DAC Framework
+RUN curl -o sqlcmd.msi https://go.microsoft.com/fwlink/?linkid=2157201 -L
+RUN sqlcmd.msi /quiet /norestart /log sqlcmd.log
+
 HEALTHCHECK CMD [ "sqlcmd", "-Q", "select 1" ]
 # make install files accessible
 COPY start.ps1 /
